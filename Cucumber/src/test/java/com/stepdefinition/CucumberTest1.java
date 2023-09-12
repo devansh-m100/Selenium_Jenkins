@@ -32,14 +32,16 @@ public class CucumberTest1 {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 
-	@When("User provides username and password.")
-	public void user_provide_username_and_password() {
+	//This is the step definition, so since the step definition differs so it is not getting invoked.
+	@When("^User provides (.*) and (.*).$")
+	public void user_provide_username_and_password(String string1, String string2) {
 
 	    // Write code here that turns the phrase above into concrete actions
 
-	   driver.findElement(By.name("username")).sendKeys("Admin");
+	   driver.findElement(By.name("username")).sendKeys(string1);
 
-	   driver.findElement(By.name("password")).sendKeys("admin123");
+	   driver.findElement(By.name("password")).sendKeys(string2);
+	   
 	}
 	
 	@And("click on login button.")
