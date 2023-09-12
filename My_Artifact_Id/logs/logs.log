@@ -1,0 +1,6 @@
+[ERROR] 2023-09-11 13:10:51.757 [main] LogFourjDemo - This is an error
+[WARN ] 2023-09-11 13:10:51.762 [main] LogFourjDemo - This is a warning
+[FATAL] 2023-09-11 13:10:51.762 [main] LogFourjDemo - This is a fatal
+[ERROR] 2023-09-11 14:34:57.953 [main] LogFourjDemo - This is an error
+[WARN ] 2023-09-11 14:34:57.957 [main] LogFourjDemo - This is a warning
+[FATAL] 2023-09-11 14:34:57.957 [main] LogFourjDemo - This is a fatal
