@@ -5,7 +5,7 @@ Scenario Outline: Test the validate login
 Given User is on Loginpage
 When User enters <username> and <password>
 And Click the login button 
-Then User should land on Homepage
+Then User should land on Homepage 
 
 @Positive
 Examples:

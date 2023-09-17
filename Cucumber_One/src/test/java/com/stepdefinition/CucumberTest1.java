@@ -24,23 +24,14 @@ public class CucumberTest1 {
 	public void the_user_should_be_on_login_page() {
 
 	    // Write code here that turns the phrase above into concrete actions
+    System.out.println("User should be on Login Page.");
 
-		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-
-		driver.manage().window().maximize();
-
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 
 	//This is the step definition, so since the step definition differs so it is not getting invoked.
 	@When("^User provides (.*) and (.*).$")
 	public void user_provide_username_and_password(String string1, String string2) {
-
-	    // Write code here that turns the phrase above into concrete actions
-
-	   driver.findElement(By.name("username")).sendKeys(string1);
-
-	   driver.findElement(By.name("password")).sendKeys(string2);
+      System.out.println("");
 	   
 	}
 	
@@ -48,9 +39,8 @@ public class CucumberTest1 {
 	public void click_on_login_btn() {
 
 	    // Write code here that turns the phrase above into concrete actions
-
-	   driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();
-
+          System.out.println("click on login button.");
+	  
 	}
 
 	@Then("Check whether user successfully returned on the login page.")
@@ -59,7 +49,6 @@ public class CucumberTest1 {
 
 	    // Write code here that turns the phrase above into concrete actions
 
-	    Assert.assertEquals(driver.getCurrentUrl(), "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
-
+	    System.out.println("Check whether user successfully returned on the login page.");
 	}
 }

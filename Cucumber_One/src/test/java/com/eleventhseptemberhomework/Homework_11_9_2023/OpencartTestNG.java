@@ -14,8 +14,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-
-
 public class OpencartTestNG {
 	WebDriver driver;
 	extend_report report1 = new extend_report();
@@ -62,9 +60,4 @@ public class OpencartTestNG {
   public void aftertest() {
 	  report1.callFlush();
   }
-
-	
-	
-	
-	
 }

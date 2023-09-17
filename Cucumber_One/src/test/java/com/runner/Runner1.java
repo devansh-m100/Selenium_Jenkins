@@ -9,8 +9,11 @@ import io.cucumber.junit.CucumberOptions;
 
 @CucumberOptions(
 
-		features = {"src/test/Resources/Features/outliers_cucumber.feature"},
-		glue = {"multi_scenario_13_9_2023"},
+		features = {"src/test/Resources/Features/CucumberTest1.feature"},
+		glue = {"com.stepdefination"},
+		plugin = {"pretty","json:target/cucumber-reports/cucumber.json"},
+
+		monochrome=true,
 		dryRun = false
 
 		)
